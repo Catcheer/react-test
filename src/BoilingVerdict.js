@@ -11,7 +11,7 @@ class BoilingVerdict extends Component {
    
 
     render() {
-        const celsius=this.props.celsius
+        const celsius=this.props.temperature
         console.log(celsius)
         if (celsius >= 100) {
             return (<p>the water will boil</p>)

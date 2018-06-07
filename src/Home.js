@@ -1,4 +1,5 @@
 import React ,{Component} from 'react'
+import Welcome from './WelcomeDialog'
 
 class Home extends Component{
     constructor(props){
@@ -7,7 +8,7 @@ class Home extends Component{
     }
 
     render(){
-        return <h3>welcome to some</h3>
+        return <Welcome />
     }
 }
 export default Home
