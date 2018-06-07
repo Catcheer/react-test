@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import logo from "./logo.svg";
+import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import "./App.css";
 import routes from "./routes";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
