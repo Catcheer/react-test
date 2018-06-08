@@ -1,8 +1,8 @@
 // import App from "./App";
 
-import Calculator from "./Calculator";
-import Roster from "./Roster";
-import Home from './Home'
+import Calculator from "./page/Calculator/Calculator";
+import Roster from "./page/Roster/Roster";
+import Home from './page/Home/Home'
 
 const routeConfig = [
   { path: "/", component: Home ,exact:true},

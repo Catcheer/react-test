@@ -32,7 +32,6 @@ class App extends Component {
             </ul>
             <main>
               <Switch>
-               
                 {routes.map((route, index) => {
                   if (route.exact) {
                     return (
