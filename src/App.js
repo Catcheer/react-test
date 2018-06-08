@@ -19,7 +19,7 @@ class App extends Component {
 
         <BrowserRouter>
           <div>
-            <ul>
+            <ul className="navList">
             <li>
                 <Link to="/">home</Link>
               </li>
@@ -28,6 +28,9 @@ class App extends Component {
               </li>
               <li>
                 <Link to="/roster">roster</Link>
+              </li>
+              <li>
+                <Link to="/todos">todos</Link>
               </li>
             </ul>
             <main>
