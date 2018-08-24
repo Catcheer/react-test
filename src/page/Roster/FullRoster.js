@@ -45,7 +45,7 @@ class FullRoser extends Component {
         {list.map((item, index) => {
           return (
             <li key={"" + index}>
-              <Link to={`/roster/${item.id}`}>{`${item.txt}`}</Link>
+              <Link to={`./roster/${item.id}`}>{`${item.txt}`}</Link>
             </li>
           );
         })}
