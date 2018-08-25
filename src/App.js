@@ -17,20 +17,20 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
 
-        <BrowserRouter>
+        <BrowserRouter basename="react-test">
           <div>
             <ul className="navList">
             <li>
-                <Link to="./">home</Link>
+                <Link to="/">home</Link>
               </li>
               <li>
-                <Link to="./calculator">calculator</Link>
+                <Link to="/calculator">calculator</Link>
               </li>
               <li>
-                <Link to="./roster">roster</Link>
+                <Link to="/roster">roster</Link>
               </li>
               <li>
-                <Link to="./todos">todos</Link>
+                <Link to="/todos">todos</Link>
               </li>
             </ul>
             <main>
