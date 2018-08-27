@@ -20,39 +20,23 @@ class App extends Component {
         <BrowserRouter basename="react-test">
           <div>
             <ul className="navList">
-            <li>
-                <Link to="/">home</Link>
-              </li>
-              <li>
-                <Link to="/calculator">calculator</Link>
-              </li>
-              <li>
-                <Link to="/roster">roster</Link>
-              </li>
-              <li>
-                <Link to="/todos">todos</Link>
-              </li>
+              {
+                routes.map((item,index)=>{
+                  return <li key={''+index}>
+                     <Link to={`${item.path}`}>{item.path.substring(1)===''?'home':item.path.substring(1)}</Link>
+                  </li>
+                })
+              }
             </ul>
             <main>
               <Switch>
                 {routes.map((route, index) => {
-                  if (route.exact) {
                     return (
                       <Route
-                        exact
                         key={"" + index}
-                        path={route.path}
-                        component={route.component}
+                       {...route}
                       />
                     );
-                  }
-                  return (
-                    <Route
-                      key={"" + index}
-                      path={route.path}
-                      component={route.component}
-                    />
-                  );
                 })}
               </Switch>
             </main>
