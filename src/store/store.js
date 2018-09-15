@@ -1,5 +1,5 @@
 import {reducer} from './reducer'
-import {createStore} from 'redux'
+import {createStore,combineReducers} from 'redux'
 
 import initStoreValue from "../mock/TodoList";
 

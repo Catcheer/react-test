@@ -2,7 +2,7 @@
 
 import Calculator from "./page/Calculator/Calculator";
 import Roster from "./page/Roster/Roster";
-import Home from './page/Home/Home'
+import Home from './page/Home/components/Home'
 import Todos from './page/Todos'
 import Login from './page/Login'
 import LifeCyle from './page/LifeCyle'
