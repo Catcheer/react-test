@@ -1,7 +1,8 @@
-import {reducer} from './reducer'
-import {createStore,combineReducers} from 'redux'
+import reducer from './rootReducer'
+import {createStore} from 'redux'
 
-import initStoreValue from "../mock/TodoList";
+
+let initStoreValue={}
 
 const store=createStore(reducer,initStoreValue)
 

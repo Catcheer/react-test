@@ -4,7 +4,7 @@ import TodoList from "../component/TodoList";
 import { toggleTodo } from "../actions";
 
 const mapStateToProps = (state, ownProps) => ({
-  todos: state.todos
+  todos: state.TodoReducer
 });
 const mapDispatchToProps=(dispatch)=>({
     onTodoClick:(id)=>{

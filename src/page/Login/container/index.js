@@ -6,7 +6,7 @@ import {submitLogin} from '../actions/index.js'
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        state: state
+        userInfo: state.LoginReducer
     }
         
   };
